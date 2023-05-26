@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  
 }
 
 .App-logo {
@@ -7,32 +7,169 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #2E4F4F;
+    background: linear-gradient(#EAEAEA,#F0F0F0,#EFEFEF);
+}
+.navbar{
+    background-color: #F0F0F0;
+    padding: 15px;
+}
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none ;
+
+}
+.nav-link:hover{
+    background-color: #2E4F4F;
+    color: white;
+}
+.navbar-brand{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* main section */
+
+.main{
+    background: url(../public/0468c05b-7370-408e-9408-96d4e53f7c47.jpg);
+    background-size : cover;
+    width: 100%;
+    height: 95vh;
+    background-position: center;
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    text-decoration: underline;
+    font-size: 1.4rem;
+    line-height: 1;
+    display: inline-block;
+    border-bottom: 3px solid #2E4F4F;
+    text-transform: uppercase;
+    padding-top: 10px;
+} 
+.btn-work{
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: #2E4F4F;
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+.btn-Hire{
+    height: 50px;
+    width: 90px;
+    border: 1px solid #2E4F4F;
+    color: #2E4F4F;
+    font-weight: bold;
+}
+.btn-Hire:hover{
+    background-color: #2E4F4F;
+    color: white;
+    font-weight: bold;
+}
+.about{
+    padding: 110px;
+    background-color: #f8f9fa ;
+}
+.about img{
+    -webkit-box-shadow: 10px 10px 37px -9px rgba(0,0,0,0.50);
+    -moz-box-shadow: 10px 10px 37px -9px rgba(0,0,0,0.50);
+    box-shadow: 10px 10px 37px -9px rgba(0,0,0,0.50);
+
+    height: 60vh;
+    width: auto;
+    margin: 60px;
+    margin-left: 5px;
+    border-radius: 25px;
+    background: url(../public/sirTariq.png);
+    background-position: left top;
+    background-repeat: repeat;
+
+}
+h1{
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.btn-DL{
+    height: 40px;
+    width: 145px;
+    border: none;
+    background-color: #2E4F4F;
+    color: white;
+    font-weight: bold;
+}
+.btn-Contact{
+    height: 40px;
+    width: 145px;
+    border: 1px solid #2E4F4F;
+    color: #2E4F4F;
+    font-weight: bold;
+}
+.btn-Contact:hover{
+    background-color: #2E4F4F;
+    color: white;
+    font-weight: bold;
+}
+
+.card{
+    border: none;
+    outline:none;
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+    -webkit-box-shadow: 10px 10px 37px -9px rgba(0,0,0,0.50);
+    -moz-box-shadow: 10px 10px 37px -9px rgba(0,0,0,0.50);
+    box-shadow: 10px 10px 37px -9px rgba(0,0,0,0.50);
+    border-radius: 25px;
+}
+.card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s    ;
+}
+.card p{
+    color: grey;
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgrey;
+    color: black;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-radius: 50%;
 }
